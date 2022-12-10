@@ -1,7 +1,10 @@
 #include<stdio.h>
 
-int main(){
-	read_file("msg.txt");
+int main(int argc, char *argv[]){
+   	if( argc > 2 ) {
+      		printf("Too many arguments supplied.\n");
+   	}
+	read_file(argv[1]);
 	return 0;
 }
 
